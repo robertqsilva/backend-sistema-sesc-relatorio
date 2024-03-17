@@ -11,5 +11,4 @@ router.post(
   planilhaControllers.relatorioEmplanilha
 );
 
-router.get("/", (req, res) => res.json("Bem vindo a api"));
 export default router;
