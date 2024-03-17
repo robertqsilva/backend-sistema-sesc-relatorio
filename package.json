@@ -1,11 +1,13 @@
 {
   "name": "relatorio-sesc",
   "version": "1.0.0",
+  "contributors": ["Robet Queizoz"],
   "description": "",
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon ./src/shared/http/server.js"
+    "dev": "nodemon ./src/shared/http/server.js",
+    "start": "node ./src/shared/http/server.js"
   },
   "keywords": [],
   "author": "",
