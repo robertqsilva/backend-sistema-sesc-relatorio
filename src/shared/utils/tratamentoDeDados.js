@@ -1,5 +1,5 @@
-export const tratamentoDeDados = (texto) => {
-  const linhas = texto.split("\n");
+const tratamentoDeDados = (data) => {
+  const linhas = data.split("\n");
   const colunas = linhas.map((linha) => {
     const partes = linha.split("\t");
     const oc = partes[0];
@@ -10,3 +10,5 @@ export const tratamentoDeDados = (texto) => {
 
   return colunas;
 };
+
+export default tratamentoDeDados;

@@ -1,11 +1,12 @@
-import tratamentoDeDados from "./tratamentoDeDados";
-import * as fs from "fs";
+import tratamentoDeDados from "./tratamentoDeDados.js";
 
-export const lerArquivoTxt = (arquivo) => {
-  fs.readFile(arquivo, "utf8", (err, data) => {
-    if (err) {
-      return "error";
-    }
+const lerArquivoTxt = async (buffer) => {
+  try {
+    const data = buffer.toString("utf8");
     return tratamentoDeDados(data);
-  });
+  } catch (err) {
+    return "error";
+  }
 };
+
+export default lerArquivoTxt;
